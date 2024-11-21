@@ -1,4 +1,7 @@
 import 'package:aifer_task/view/home_screen.dart';
+import 'package:aifer_task/view/inbox_screen.dart';
+import 'package:aifer_task/view/profile_screen.dart';
+import 'package:aifer_task/view/search_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -13,13 +16,16 @@ class BottombarScreensState extends State<BottombarScreens> {
   var currentIndex = 0;
   final List<Widget> _pages = [
     HomeScreen(),
+    SearchScreen(),
+    InboxScreen(),
+    ProfileScreen(),
   ];
 
   List<IconData> listOfIcons = [
     Icons.home_rounded,
-    Icons.calendar_month,
+    Icons.search_outlined,
     Icons.chat,
-    Icons.settings,
+    Icons.person,
   ];
 
   @override
