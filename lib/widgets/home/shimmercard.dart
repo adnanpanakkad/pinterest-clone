@@ -11,16 +11,16 @@ class ShimmerList extends StatelessWidget {
       padding: const EdgeInsets.all(8),
       child: SingleChildScrollView(
         child: StaggeredGrid.count(
-          crossAxisCount: 2, // Two columns
+          crossAxisCount: 2, 
           mainAxisSpacing: 8,
           crossAxisSpacing: 8,
           children: List.generate(
-            100, // Number of shimmer items
+            100, 
             (index) => Shimmer.fromColors(
               baseColor: Colors.grey[300]!,
               highlightColor: Colors.grey[100]!,
               child: Container(
-                height: 250, // Adjust height to match your card layout
+                height: 250,
                 decoration: BoxDecoration(
                   color: Colors.grey[300],
                   borderRadius: BorderRadius.circular(12),

@@ -50,12 +50,11 @@ class ImageCard extends StatelessWidget {
                   ),
                 ),
                 IconButton(
-                  icon: Icon(
-                    Icons.download,
-                    color: Colors.white,
-                  ),
-                  onPressed: () async {},
-                )
+                  icon: Icon(Icons.download, color: Colors.white),
+                  onPressed: () async {
+                    await controller.saveImage(context, images.downloadUrl);
+                  },
+                ),
               ],
             ),
           ),

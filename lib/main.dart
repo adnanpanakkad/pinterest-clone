@@ -1,6 +1,6 @@
 import 'package:aifer_task/widgets/home/bottombar.dart';
-import 'package:aifer_task/view/home_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 void main() {
   runApp(const MyApp());
@@ -9,10 +9,9 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData.dark(),
       home: BottombarScreens(),
