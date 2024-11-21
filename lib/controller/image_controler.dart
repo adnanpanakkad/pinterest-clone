@@ -1,8 +1,8 @@
 import 'dart:convert';
 import 'package:aifer_task/model/image_model.dart';
-import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:http/http.dart' as http;
+
 
 class UnsplashController extends GetxController {
   final String ApiUrl =

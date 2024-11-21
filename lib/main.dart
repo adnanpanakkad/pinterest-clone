@@ -1,4 +1,4 @@
-import 'package:aifer_task/view/bottombar.dart';
+import 'package:aifer_task/widgets/home/bottombar.dart';
 import 'package:aifer_task/view/home_screen.dart';
 import 'package:flutter/material.dart';
 

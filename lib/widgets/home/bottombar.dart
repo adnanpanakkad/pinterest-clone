@@ -24,7 +24,7 @@ class BottombarScreensState extends State<BottombarScreens> {
   List<IconData> listOfIcons = [
     Icons.home_rounded,
     Icons.search_outlined,
-    Icons.chat,
+    Icons.notifications,
     Icons.person,
   ];
 
@@ -38,7 +38,7 @@ class BottombarScreensState extends State<BottombarScreens> {
         children: _pages,
       ),
       bottomNavigationBar: Container(
-        margin: const EdgeInsets.all(10),
+        // margin: const EdgeInsets.all(5),
         height: screenWidth * .155,
         decoration: BoxDecoration(
           color: Colors.black,
