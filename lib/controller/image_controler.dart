@@ -28,7 +28,7 @@ class UnsplashController extends GetxController {
       }
     } catch (e) {
       Get.snackbar("Error", "An error occurred: $e",
-          snackPosition: SnackPosition.BOTTOM);
+          snackPosition: SnackPosition.TOP);
     } finally {
       isLoading(false);
     }
@@ -39,7 +39,6 @@ class UnsplashController extends GetxController {
     final scaffoldMessenger = ScaffoldMessenger.of(context);
 
     try {
-      // Download image
       final http.Response response = await http.get(Uri.parse(downloadUrl));
       final dir = await getTemporaryDirectory();
       // Create an image name
